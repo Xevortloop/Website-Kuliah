@@ -9,19 +9,19 @@
         <h1>I'm Stanislauz</h1>
         <h2>Student at Sanata Dharma</h2>
         <img class="profile" src="IMG_7957-modified.png" alt="profileku">
-        <p class="perkenalan">Saya memasuki semester 4 di universitas Saya, ini adalah website perkenalan saya</p>
+        <p class="perkenalan">Saya memasuki semester 4 di universitas Saya, ini adalah website mengenai Saya</p>
         <div class="tampilan-tengah">
             <hr>
             <div class="skill">
                 <h2>Kegiatan Saya</h2>
-                <p>Kegiatan saya untuk saat ini adalah Kuliah, Bermain Game, dan Belajar Pemrograman</p>
+                <p class="kegiatan">Kegiatan saya untuk saat ini adalah Kuliah, Bermain Game, dan Belajar Pemrograman. Ketika liburan biasanya menghabiskan waktu untuk melihat youtube, dan terkadang melihat tutorial youtube mengenai Pemrograman</p>
                 <h2>Skill Saya</h2>
                 <h3>Development</h3>
-                <p>Saya bisa menggunakan beberapa bahasa pemrograman simple seperti Javascript, Lua, Python, dan HTML
+                <p class="development">Saya bisa menggunakan beberapa bahasa pemrograman simple seperti Javascript, Lua, Python, dan HTML
                 </p>
             </div>
             <div class="skill-saya">
-                <h2>Pengalaman Saya  </h2>
+                <h2>Pengalaman Saya </h2>
                 <ul class="ul-tengah">
                     <li>Membuat Bot Discord ( Javascript )</li>
                     <li>Membuat Server FiveM ( Lua ) </li>
@@ -67,6 +67,7 @@
         font-size: 5rem;
         margin: 50px auto 0 auto;
         font-family: 'Sacramento', cursive;
+        
     }
 
     h2 {
@@ -85,6 +86,16 @@
     p {
         color: #D1D8DE;
         line-height: 2;
+        overflow-wrap: break-word;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    p.kegiatan {
+        max-width: 500px;
+    }
+    p.development {
+        max-width: 500px;
     }
 
     td {
@@ -102,6 +113,7 @@
     }
     p.perkenalan {
         line-height: 5;
+        max-width: 600px;
     }
     .data-diri {
         margin-left: auto;
@@ -111,15 +123,19 @@
     .tampilan-atas {
         background-color: #0D1117;
         position: relative;
-        padding-top: 100px;
+        padding: 50px 0 20px;
+        margin-bottom: 0;
     }
 
     .tampilan-tengah {
+        margin-top: 10px;
         margin: 100px 0;
+        padding: 50px 0 20px;
+        margin-bottom: 0;
     }
 
     .tampilan-bawah {
-        margin: 100px 0;
+        margin: 10px 0;
         padding: 50px 0 20px;
         margin-bottom: 0;
     }
